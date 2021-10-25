@@ -1,0 +1,95 @@
+/* Reicinio los valores 
+por defecto del
+ navegador */
+*{
+margin: 0;
+padding: 0;
+}
+
+/* maquetacion del header */
+header{
+    background:#333;
+    color: white;
+    padding: 2rem;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+.header-div{
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ol a{
+    color:white;
+    text-decoration: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.header-div--navigation ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-div--navigation ol li {
+    display: inline-block;
+}
+
+.header-div--navigation ol li a {
+    display: block;
+    padding: 0.5rem 2rem;
+    transition: 0.4s linear;
+}
+.header-div--navigation ol li a:hover {
+    background-color: #4a4a4a;
+    border-radius: 3px;
+}
+.main{
+    padding-top: 14rem;
+}
+
+@media only screen and (max-width: 768px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+    }
+    
+    .header-div--navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .header-div--navigation ol.show{
+        display: block;
+        display: none;
+    }
+        
+    .header-div--navigation ol li {
+        display: block;
+    }
+    
+    .header-div--navigation ol li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: 0.4s linear;
+    }
+    .header-div--navigation ol li a:hover {
+        background-color: #4a4a4a;
+        border-radius: 3px;
+    }
+    
+/* Fin de la maquetacion header  */
